@@ -5,6 +5,20 @@ const sections1 = document.getElementById('section1')
 const sections2 = document.getElementById('section2')
 const sections3 = document.getElementById('section3')
 const sections4 = document.getElementById('section4')
+
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
+
+
 btndark.addEventListener('click', function(){
 
     document.body.style.backgroundColor = 'black';
