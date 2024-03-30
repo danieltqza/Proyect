@@ -93,6 +93,19 @@
           para el desarrollo de aplicaciones web modernas.
         </p>
       </section>
+      <form action="/">
+        <div>
+          <datalist id="langs">
+            <option value="JavaScript"></option>
+            <option value="Python"></option>
+            <option value="CSS"></option>
+            <option value="Java"></option>
+            <option value="C++"></option>
+          </datalist>
+          <label for="langs">Qué Lenguage De Programación Te Gusta Más?</label>
+          <input list="langs" name="langs" id="langs">
+        </div>
+      </form>
     </main>
     <div id="proyectos" class="container-proyects">
       <h2 class="header-proyects">Proyectos</h2>
@@ -151,8 +164,8 @@
           <img src="./assets/imgs/TestimonialPage.png" alt="Preview of img" class="proyect-img4 imgfour" loading="lazy">
           <footer class="content-tecnologias">
             <span class="decoration2">Tecnologias</span>
-            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias" >
-            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias" >
+            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias">
+            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias">
           </footer>
           <br>
           <a href="https://danieltqza.github.io/TTestimonialPage/" target="_blank">Link</a>
@@ -164,6 +177,68 @@
     </div>
     <footer>
       <p>Conocimientos Muy Pocos De JavaScript</p>
+      <section>
+        <h2>Formulario De Prueba</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Formulario De Prueba</legend>
+            <div>
+              <label for="name">Nombre: </label>
+              <input type="text" name="name" id="name" placeholder="Nombre De Prueba" required>
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" placeholder="Email De Prueba" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Información Adicional</legend>
+            <div>
+              <label for="cel">Teléfono: </label>
+              <input type="tel" name="tel" id="cel" placeholder="teléfono de prueba" required pattern="
+              [0-9]{9}">
+            </div>
+            <div>
+              <label for="date">Fecha</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Información Extremadamente Adicional</legend>
+            <div>
+              <label for="terms">Acceptas Los Términos De Prueba?(Falsos)</label>
+              <input type="checkbox" name="terms" id="terms">
+            </div>
+            <div>
+              <label for="nose">Nose</label>
+              <input type="nose" name="nose" id="nose">
+            </div>
+            <div>
+              <label for="pag">Qué te parecio la página</label>
+              <select name="pag" id="pag">
+                <option value="1">Bueno</option>
+                <option value="2">Medio-Bueno</option>
+                <option value="3">Normal</option>
+                <option value="4">Medio-Normal</option>
+                <option value="5">Medio-Malo</option>
+                <option value="6">Malo</option>
+              </select>
+            </div>
+            <div>
+              <datalist id="langs">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="CSS"></option>
+                <option value="Java"></option>
+                <option value="C++"></option>
+              </datalist>
+              <label for="langs">Qué Lenguage De Programación Te Gusta Más? Qué El Anterior O El Mismo?</label>
+              <input list="langs" name="langs" id="langs">
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar Información De Prueba">
+        </form>
+      </section>
     </footer>
   </div>
 
