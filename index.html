@@ -18,8 +18,8 @@
       <button class="close-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
       <ul class="container-navlinks">
         <li><a href="#">Contact </a></li>
-        <li><a href="#">About </a></li>
-        <li><a href="#">More Info </a></li>
+        <li><a href="#informacion">Informacion </a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#">Easter Egg </a></li>
       </ul>
       <button class="btndark" id="darkmode">Dark Mode</button>
@@ -37,10 +37,10 @@
         .Página Creada El 21/3/2024 jueves,21 de marzo de 2024
       </p>
     </aside>
-    <main class="container-main">
+    <main id="informacion" class="container-main">
       <section id="section1" class="container-HTML card-container sections">
         <h2 class="text-header">HTML</h2>
-        <p>
+        <p class="text-content">
           HTML (Lenguaje de marcado de hipertexto o HyperText Markup Language
           por sus siglas en inglés) Se Basa En Etiquetas Es Muy Facil De
           Aprender Lo Básico, Tiene Muchas Características Como Semantica,
@@ -55,7 +55,7 @@
       </section>
       <section id="section2" class="container-CSS card-container sections">
         <h3 class="text-header">CSS</h3>
-        <p>
+        <p class="text-content">
           Hecho Para Decorar Las Páginas De HTML, Ya Que No Tenian Estilos
           Pero Con La LLegada De CSS Se Pudo Dar
           <span class="decoration">Mas Estilo Gráfico</span> A Las Páginas
@@ -69,7 +69,7 @@
       </section>
       <section id="section3" class="container-JavaScript card-container sections">
         <h4 class="text-header">JavaScript</h4>
-        <p>
+        <p class="text-content">
           Despues de HTML y CSS, Las Páginas Yo Diría Que Eran Estaticas Pero
           No Del Tedo, Pero Con la Llegada de JavaScript, Se Logro Dar
           <span class="decoration">Mayor Interactividad Al Usuario (DOM) </span>Con la Pagina Document Objet Model<br />
@@ -83,7 +83,7 @@
       </section>
       <section id="section4" class="container-React card-container sections">
         <h5 class="text-header">React</h5>
-        <p>
+        <p class="text-content">
           React es una
           <span class="decoration">biblioteca de JavaScript de código abierto</span>
           que se utiliza principalmente para construir interfaces de usuario
@@ -94,64 +94,65 @@
         </p>
       </section>
     </main>
-    <div class="container-proyects">
+    <div id="proyectos" class="container-proyects">
       <h2 class="header-proyects">Proyectos</h2>
-      <p class="text-proyects">Proyectos Hechos Por Retos De La Página<a href="https://devchallenges.io/dashboard"
+      <p class="additional-proyects">Proyectos Hechos Por Retos De La Página<a href="https://devchallenges.io/dashboard"
           title="https://devchallenges.io/dashboard" target="_blank"> devchallenges </a></p>
       </p>
       <section class="container-articles">
-        <article class="proyect">
+        <article id="proyect1" class="proyect align">
           <h3 class="title-proyects">Simple Home Page</h3>
-          <p class="content-proyects">Considero Qué Es Mi Mejor Proyecto Hasta El Momento De Esta Página Ya Que Contiene
+          <p class="text-proyects">Considero Qué Es Mi Mejor Proyecto Hasta El Momento De Esta Página Ya Que Contiene
             HTML, CSS, JavaScript Y Es Responsive</p>
-          <img src="./assets/SimpleHome.png" class="proyect-img" alt="PreView Of Image ">
+          <img src="./assets/imgs/SimpleHome.png" class="proyect-img imgone" alt="PreView Of Image " loading="lazy">
           <footer class="content-tecnologias">
-            <span>Tecnologias</span>
-            <img src="./assets/html.png" alt="HTML LOGO" class="Tecnologias">
-            <img src="./assets/css.png" alt="CSS LOGO" class="Tecnologias">
-            <img src="./assets/Javascript.png" alt="JavaScript LOGO" class="Tecnologias">
+            <span class="decoration2">Tecnologias</span>
+            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias" loading="lazy">
+            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias" loading="lazy">
+            <img src="./assets/imgs/Javascript.png" alt="JavaScript LOGO" class="Tecnologias" loading="lazy">
           </footer>
           <a href="https://danieltqza.github.io/SimplePage/" target="_blank"
             title="https://danieltqza.github.io/SimplePage/"><br>Link</a>
         </article>
-        <article class="proyect">
+        <article id="proyect2" class="proyect align">
           <h3 class="title-proyects">BlogCard</h3>
-          <p class="content-proyects">Me Conllevo Un Reto Alinear Las Imagenes Y Texto Pero Gracias A Eso Aprendi Mucho
+          <p class="text-proyects">Me Conllevo Un Reto Alinear Las Imagenes Y Texto Pero Gracias A Eso Aprendi Mucho
             Algunas Cosas</p>
-          <img src="./assets/BlogCard.png" alt="Preview of img" class="proyect-img2">
+          <img src="./assets/imgs/BlogCard.png" alt="Preview of img" class="proyect-img2 imgtwo" loading="lazy">
           <footer class="content-tecnologias">
-            <span>Tecnologias</span>
-            <img src="./assets/html.png" alt="HTML LOGO" class="Tecnologias">
-            <img src="./assets/css.png" alt="CSS LOGO" class="Tecnologias">
+            <span class="decoration2">Tecnologias</span>
+            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias" loading="lazy">
+            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias" loading="lazy">
           </footer>
           <br>
           <a href="https://danieltqza.github.io/BloggCard/" target="_blank"
-            title="https://danieltqza.github.io/BloggCard/">Link</a>
+            title="https://danieltqza.github.io/BloggCard/">
+            Link</a>
 
         </article>
-        <article class="proyect">
+        <article id="proyect3" class="proyect align">
           <h3 class="title-proyects">Card</h3>
-          <p class="content-proyects">Se Podría Decir Mi Primer Intento De Crear Algo En Diseño Web, Me Trajo Muchos
+          <p class="text-proyects">Se Podría Decir Mi Primer Intento De Crear Algo En Diseño Web, Me Trajo Muchos
             Problemas Una Simple Carta, Pero Gracias A Elaborar La Carta Logre Aprender Mucho Más</p>
-          <img src="./assets/Card.png" alt="Preview of img" class="proyect-img2">
+          <img src="./assets/imgs/Card.png" alt="Preview of img" class="proyect-img3 imgthree" loading="lazy">
           <footer class="content-tecnologias">
-            <span>Tecnologias</span>
-            <img src="./assets/html.png" alt="HTML LOGO" class="Tecnologias">
-            <img src="./assets/css.png" alt="CSS LOGO" class="Tecnologias">
+            <span class="decoration2">Tecnologias</span>
+            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias">
+            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias">
           </footer>
           <br>
           <a href="https://danieltqza.github.io/Ccard/" target="_blank"
             title="https://danieltqza.github.io/Ccard/">Link</a>
         </article>
-        <article class="proyect">
+        <article id="proyect4" class="proyect align">
           <h3 class="title-proyects">Testimonial Page</h3>
-          <p class="content-proyects">Página creada pero me resulto dificil, pero al lograrla logre dominar mas CSS, y
+          <p class="text-proyects">Página creada pero me resulto dificil, pero al lograrla logre dominar mas CSS, y
             tener un mayor conocimiento de CSS Grid</p>
-          <img src="./assets/TestimonialPage.png" alt="Preview of img" class="proyect-img">
+          <img src="./assets/imgs/TestimonialPage.png" alt="Preview of img" class="proyect-img4 imgfour" loading="lazy">
           <footer class="content-tecnologias">
-            <span>Tecnologias</span>
-            <img src="./assets/html.png" alt="HTML LOGO" class="Tecnologias">
-            <img src="./assets/css.png" alt="CSS LOGO" class="Tecnologias">
+            <span class="decoration2">Tecnologias</span>
+            <img src="./assets/imgs/html.png" alt="HTML LOGO" class="Tecnologias" >
+            <img src="./assets/imgs/css.png" alt="CSS LOGO" class="Tecnologias" >
           </footer>
           <br>
           <a href="https://danieltqza.github.io/TTestimonialPage/" target="_blank">Link</a>
@@ -166,7 +167,7 @@
     </footer>
   </div>
 
-  <script src="./assets/java.js"></script>
+  <script src="./assets/java.js" defer></script>
 </body>
 
 </html>
