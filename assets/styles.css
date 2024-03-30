@@ -156,6 +156,10 @@
         font-size: 40px;
     }
 
+    .space-form{
+        margin: 16px;
+    }
+
     .additional-proyects{
         text-align: center;
         margin-bottom: 30px;
@@ -167,6 +171,41 @@
         
     }
 
+    .container-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .container-ask {
+        margin-bottom: 20px;
+        border-radius: 10px; 
+        overflow: hidden; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        background-color: #191818;
+    }
+    
+    /* Estilos para el resumen */
+    .the-ask {
+        cursor: pointer;
+        font-weight: bold;
+        color: #333; /* Cambia el color del texto del resumen */
+        padding: 10px 20px; /* Espaciado dentro del resumen */
+        background-color: #eaeaea; /* Color de fondo */
+        border-bottom: 1px solid #ccc; /* Borde inferior */
+    }
+    
+    /* Estilos para el contenido dentro del detalle */
+    .container-ask .text-ask   {
+        margin: 0;
+        padding: 20px; 
+        border-top: 3px solid greenyellow; 
+    }
+    
+    /* Estilos para cuando el detalle está abierto */
+    details[open] summary {
+        background-color: #ccc; /* Cambia el color de fondo del resumen cuando está abierto */
+    }
     .container-articles .proyect{
         background-color: #131212;
         padding: 16px;

@@ -31,12 +31,10 @@
         "B"
       </h1>
     </header>
-    <aside>
       <p class="aside">
         Bitácora De <span class="decoration">Diseño Web</span> O El Proyecto
         .Página Creada El 21/3/2024 jueves,21 de marzo de 2024
       </p>
-    </aside>
     <main id="informacion" class="container-main">
       <section id="section1" class="container-HTML card-container sections">
         <h2 class="text-header">HTML</h2>
@@ -94,7 +92,7 @@
         </p>
       </section>
       <form action="/">
-        <div>
+        <div class="container-mainask">
           <datalist id="langs">
             <option value="JavaScript"></option>
             <option value="Python"></option>
@@ -102,11 +100,33 @@
             <option value="Java"></option>
             <option value="C++"></option>
           </datalist>
-          <label for="langs">Qué Lenguage De Programación Te Gusta Más?</label>
+          <label for="langs" class="text-header space-form">Qué Lenguage De Programación Te Gusta Más?</label>
           <input list="langs" name="langs" id="langs">
         </div>
       </form>
     </main>
+    <aside>
+      <h2 class="title-proyects">Sobre mí</h2>
+      <section class="container-details">
+        <details class="container-ask" open>
+          <summary class="the-ask">¿Dónde Estudio?</summary>
+          <p class="text-ask">Unidad Educativa Primicias De La Cultura De Quito</p>
+        </details>
+        <details class="container-ask" open>
+          <summary class="the-ask" >¿Dónde Estudie?</summary>
+          <p class="text-ask">Unidad Educativa Antonio Nariño</p>
+        </details>
+        <details class="container-ask">
+          <summary class="the-ask">¿Mi Materia Favorita?</summary>
+          <p class="text-ask">Diseño Web</p>
+        </details>
+        <details class="container-ask">
+          <summary class="the-ask">¿Qué Lenguaje De Programación Me Gusta Más?</summary>
+          <p class="text-ask">JavaScript Aunque No Tengo Mucho Conocmiento Me Gusta</p>
+        </details>
+
+      </section>
+    </aside>
     <div id="proyectos" class="container-proyects">
       <h2 class="header-proyects">Proyectos</h2>
       <p class="additional-proyects">Proyectos Hechos Por Retos De La Página<a href="https://devchallenges.io/dashboard"
@@ -175,7 +195,7 @@
         <h3>Inicios</h3>
       </article>
     </div>
-    <footer>
+    <footer class="container-footer">
       <p>Conocimientos Muy Pocos De JavaScript</p>
       <section>
         <h2>Formulario De Prueba</h2>
