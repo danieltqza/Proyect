@@ -1,0 +1,442 @@
+.container {
+    max-width: 950px; /* Ancho máximo del contenedor */
+    min-width: 300px; /* Ancho mínimo del contenedor */
+    margin: 30px auto; /* Alineación al centro */
+    padding: 20px; /* Añade espacio de relleno alrededor del contenido */
+    border: 1px solid #ccc; /* Borde para visualización */
+    
+}
+
+.decoration{
+    color: #00FF00;
+}
+
+.text-header{
+    color: #00FF00;
+}
+
+
+
+.container-main .text-header{
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+.container-main{
+    margin-top: 30px;
+    display: grid;
+    padding: 32px;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.container .card-container{
+    background-color: rgba(34, 52, 82, 0.3);
+    margin: 0 auto;
+    width: 330px;
+    border-radius: 30px;
+    padding: 16px;
+    height: 100%;
+    transition: all 0.3s ease;
+
+}
+
+.card-container:hover{
+    transform: scale(1.03);
+}
+.card-container:hover{
+    background-color: rgba(57, 55, 55, 0.2);
+}
+.aside{
+    text-align: center;
+}
+
+.container-articles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-proyects{
+    color: aqua;
+    text-align: left;
+    font-size: 22px;
+    margin: 21px 0;
+}
+
+.header-proyects{
+    text-align: left;
+    color: white;
+    margin: 34px;
+    font-size: 40px;
+}
+
+.space-form{
+    margin: 16px;
+}
+
+.title-ask{
+    font-size: 30;
+    margin: 16px;
+}
+
+.additional-proyects{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.container-articles .links-page{
+    color: pink;
+    font-weight: bold;
+    
+}
+
+.container-details{
+    display: grid;
+    gap: 10px;
+}
+
+.container-ask {
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Estilos para el resumen */
+.the-ask {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333; /* Cambia el color del texto del resumen */
+    padding: 10px 20px; /* Espaciado dentro del resumen */
+    background-color: #eaeaea; /* Color de fondo */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+    width: 50%;
+}
+
+.answer-ask{
+    width: 54.2%;
+    background-color: rgba(255,255,255,0.095);
+}
+
+/* Estilos para el contenido dentro del detalle */
+.container-ask .text-ask   {
+    margin: 0;
+    padding: 20px; 
+    border-top: 3px solid greenyellow; 
+}
+
+/* Estilos para cuando el detalle está abierto */
+details[open] summary {
+    background-color: #ccc; /* Cambia el color de fondo del resumen cuando está abierto */
+}
+.container-articles .proyect{
+
+    margin: 32px;
+    border-radius: 30px;
+    max-width: 95%;
+    height: 94%;
+    transition: all 0.4s ease-in-out;
+}
+
+.proyect-img{
+    transition: all 0.3s ease-in;
+}
+
+.proyect:hover .proyect-img{
+    transform:scale(1.05);
+}
+
+
+
+.align-center{
+    display: flex;
+    margin: 0 auto;
+}
+
+.btninfo{
+    padding: 9px;
+    border: 1px solid red;
+    background: none;
+    width: 70px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.23);
+    cursor: pointer;
+
+}
+
+.bi{
+    width: 1em;
+    height: 1em;
+}
+
+.btninfo:hover{
+    background: red;
+    color: white;
+    
+}
+
+.container-info{
+    display: none;
+    opacity: 0;
+}
+
+.container-info{
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.py1-text-title{
+    grid-area: py1-text;
+}
+
+.py2-text-title{
+    grid-area: py2-text;
+}
+
+.py3-text-title{
+    grid-area: py3-text;
+}
+
+.py4-text-title{
+    grid-area: py4-text;
+}
+
+.py-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "py1-img py1-text"
+    "py1-img py1-text"
+    ;
+}
+
+.py-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "py2-img py2-text"
+    "py2-img py2-text"
+    ;
+} 
+
+.py-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "py3-img py3-text"
+    "py3-img py3-text"
+    ;
+}
+
+.py-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "py4-img py4-text"
+    "py4-img py4-text"
+}
+
+
+.container-articles .proyect-img{
+    width: 410px;
+    height: 245px;
+    display: block;
+    border-radius: 20px;
+}
+
+.imgone{
+    aspect-ratio: 82/49;
+}
+.imgtwo{
+    aspect-ratio: 304/365;
+}
+.imgthree{
+    aspect-ratio: 230/229;
+}
+.imgfour{
+    aspect-ratio: 165/71;
+}
+
+
+.container-articles .proyect-img2{
+    width: 304px;
+    height: 365px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+}
+
+.container-articles .proyect-img3{
+    width: 230px;
+    display: block;
+    margin: 25px auto;
+    height: 229px;
+    border-radius: 20px;
+}
+
+.container-articles .proyect-img4{
+    width: 330px;
+    display: block;
+    margin: 25px auto;
+    height: 142px;
+    border-radius: 20px;
+}
+
+.container-articles .Tecnologias{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    background: none;
+    border-radius: 20px;
+}
+.decoration2{
+    color: cyan;
+    margin: 6px;
+}
+.container-articles .text-proyects{
+    margin: 3px;
+}
+
+
+
+.content-tecnologias{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 6px;
+}
+
+.open-menu, .close-menu{
+    display: none;
+}
+.none{
+    display: none;
+}
+
+.github-logo{
+    color: white;
+    border-radius: 20px;
+    margin: 0 10px;
+}   
+
+.links-ref{
+    display: flex;
+}
+
+.code-visit{
+    display: flex;
+    padding: 2px;
+    border: 1px solid white;
+    align-items: center;
+    background-color: rgba(172, 96, 175, 0.3);
+    border-radius: 9px;
+    margin-right: 16px;
+    width: 37%;
+}
+
+.additional-headers{
+    color: rgb(15, 108, 229);
+    text-align: left;
+    margin: 16px;
+    font-size: 2em;
+}
+
+.text-info{
+    width: 80%;
+    margin: 16px;
+}
+
+.container-moreinfoarticles{
+    display: grid;
+    margin:  0 auto;
+
+}
+
+.img-br{
+    border-radius: 20px;
+}
+
+.visit-pc{
+    color: black;
+}
+
+.container-footer {
+    margin-top: 30px;
+    background-color: rgba(0, 81, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .container-footer .header-footer {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .container-footer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-footer .fs-footer {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .container-footer .lg-footer {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .container-footer label {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .container-footer input[type="text"],
+  .container-footer input[type="email"],
+  .container-footer input[type="tel"],
+  .container-footer input[type="date"],
+  .container-footer input[type="nose"],
+  .container-footer select,
+  .container-footer input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .container-footer input[type="submit"] {
+    width: 50%;
+    display: grid;
+    align-self: center;
+    padding: 10px;
+    background-color: rgba(0, 119, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container-footer input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .container-footer input:invalid {
+    border-color: #dc3545;
+  }
+  
+  .container-footer input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }

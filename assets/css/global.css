@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "onest-cyrillic-ext-300-normal", sans-serif;
+    background-color: #131836   ;
+    color: white;
+}

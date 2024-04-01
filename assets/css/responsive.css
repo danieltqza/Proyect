@@ -1,0 +1,176 @@
+@media  (min-width: 315px) and (max-width: 800px)  /*Es como usar <= */
+        { 
+            .open-menu, .close-menu{
+                display: block;
+            }
+            .container-nav{
+                opacity: 0;
+                visibility: hidden;
+            }
+            .btndark{
+                display: none;
+            }
+            .btnlight{
+                display: none;
+            }
+        
+            .container-nav{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 16px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: gray;
+                padding: 12px;  
+                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            }
+
+            .container-navlinks{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+            }
+
+            .visible{
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .container{
+                max-width: 320px;
+                min-width: 270px;
+                overflow: show;
+            }
+
+            .container-main{
+                grid-template-columns: 1fr;
+            }
+
+            .container .card-container{
+                width: 75%;
+
+            }
+
+            .py-1{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "py1-img "
+                "py1-text"
+                ;
+            }
+            .py-2{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "py2-img "
+                "py2-text"
+                ;
+            }
+            .py-3{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "py3-img "
+                "py3-text"
+                ;
+            }
+            .py-4{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "py4-img "
+                "py4-text"
+                ;
+            }
+            .container-articles .proyect-img{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img2{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img3{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img4{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .code-visit{
+                width: 100%;
+                margin-right: 10px;
+            }
+            
+        }
+
+        @media  (min-width: 670px) and (max-width: 1024px) {/*Es como usar <= */
+
+            .container{
+                max-width: 1024px;
+                min-width: 270px;
+                overflow: hidden;
+            }
+
+            .container-main{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .container .card-container{
+                width: 80%;
+
+            }
+
+            .py-1{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "py1-img py1-text"
+                "py1-img py1-text"
+                ;
+            }
+            .py-2{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "py2-img py2-text"
+                "py2-img py2-text"
+                ;
+            }
+            .py-3{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "py3-img py3-text"
+                "py3-img py3-text"
+                ;
+            }
+            .py-4{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "py4-img py4-text"
+                "py4-img py4-text"
+                ;
+            }
+            .container-articles .proyect-img{
+                width: 100%;
+                max-width: 410px;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img2{
+                width: 100%;
+                max-width: 304px;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img3{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .container-articles .proyect-img4{
+                width: 100%;
+                margin:25px -1em;
+            }
+            .code-visit{
+                width: 100%;
+                margin-right: 10px;
+            }
+            
+        }
