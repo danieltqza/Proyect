@@ -1,47 +1,51 @@
-const btndark = document.getElementById('darkmode')
-const btnlight = document.getElementById('lightmode')
-
-const sections1 = document.getElementById('section1')
-const sections2 = document.getElementById('section2')
-const sections3 = document.getElementById('section3')
-const sections4 = document.getElementById('section4')
-
-const proyects1 = document.getElementById('proyect1')
-const proyects2 = document.getElementById('proyect2')
-const proyects3 = document.getElementById('proyect3')
-const proyects4 = document.getElementById('proyect4')
-
+const btndark = document.getElementById('darkmode');
+const btnlight = document.getElementById('lightmode');
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
+const sections = document.querySelectorAll('.sections');
+const proyects = document.querySelectorAll('.proyect');
+const btnopen = document.getElementById('openinfo')
+const btnclose = document.getElementById('closeinfo')
+const containerinfos = document.getElementById('containerinfo')
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
-})
+});
 
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
-})
+});
 
+btnopen.addEventListener("click", () => {
+    containerinfos.style.display = 'block';
+    containerinfos.style.animationName = 'fadeIn';
+    btnopen.style.display = 'none';
+    btnclose.style.display = 'flex';
+});
 
-btndark.addEventListener('click', function(){
+btnclose.addEventListener('click', function () {
+    containerinfos.style.animationName = 'fadeOut';
+    setTimeout(() => {
 
+        containerinfos.style.display = 'none';
+    }, 250)
+    btnopen.style.display = 'flex';
+    btnclose.style.display = 'none';
+});
+
+btndark.addEventListener('click', function () {
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
+});
 
-
-})
-
-lightmode.addEventListener('click', function(){
-    document.body.style.backgroundColor = '#fff'
+btnlight.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#fff';
     document.body.style.color = 'black';
-    sections1.style.backgroundColor = 'white'
-    sections1.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    sections2.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    sections3.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    sections4.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    proyects1.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    proyects2.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    proyects3.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-    proyects4.style.backgroundColor = 'rgb(109 102 102 / 11.5%)'
-})
+    sections.forEach(section => {
+        section.style.backgroundColor = 'rgb(109 102 102 / 11.5%)';
+    });
+    proyects.forEach(proyect => {
+        proyect.style.backgroundColor = 'rgb(109 102 102 / 11.5%)';
+    });
+});
