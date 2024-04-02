@@ -328,12 +328,18 @@ details[open] summary {
 .code-visit{
     display: flex;
     padding: 2px;
+    color: white;
     border: 1px solid white;
     align-items: center;
     background-color: rgba(172, 96, 175, 0.3);
     border-radius: 9px;
     margin-right: 16px;
     width: 37%;
+    transition: all 0.3s ease-in-out;
+}
+
+.code-visit:hover{
+    transform: scale(1.1);
 }
 
 .additional-headers{
