@@ -203,6 +203,10 @@ details[open] summary {
     grid-area: py4-text;
 }
 
+.py5-text-title{
+    grid-area: py5-text;
+}
+
 .py-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -238,6 +242,14 @@ details[open] summary {
     "py4-img py4-text"
 }
 
+.py-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "py5-img py5-text "
+    "py5-img py5-text";
+
+}
 
 .container-articles .proyect-img{
     width: 410px;
